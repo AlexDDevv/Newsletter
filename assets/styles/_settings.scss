@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$darkGrey: hsl(234, 29%, 20%);
+$charcoGrey: hsl(235, 18%, 26%);
+$grey: hsl(231, 7%, 60%);
+$white: hsl(0, 0%, 100%);
+$tomato: hsl(4, 100%, 67%);
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    @include center;
+    font-family: 'Roboto', sans-serif;
+    background: $charcoGrey;
+    height: 100vh;
+}
+
+

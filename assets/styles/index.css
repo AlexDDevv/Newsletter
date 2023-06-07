@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  background: hsl(235, 18%, 26%);
+  height: 100vh;
+}
+
+.container {
+  background: hsl(0, 0%, 100%);
+  width: 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 18px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 1180px) {
+  .container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    padding: 0;
+  }
+}
+.container .left-part {
+  padding: 20px 40px 20px 20px;
+}
+@media screen and (max-width: 800px) {
+  .container .left-part {
+    order: 2;
+    height: 65%;
+    padding: 30px 20px;
+  }
+}
+.container .left-part .text {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 800px) {
+  .container .left-part .text {
+    margin-bottom: 40px;
+  }
+}
+.container .left-part .text h1 {
+  color: hsl(234, 29%, 20%);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.container .left-part .text p {
+  color: hsl(234, 29%, 20%);
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+  line-height: 18px;
+}
+@media screen and (max-width: 800px) {
+  .container .left-part .text p {
+    font-size: 0.95rem;
+    line-height: 20px;
+  }
+}
+.container .left-part .text .list {
+  list-style-type: none;
+}
+@media screen and (max-width: 800px) {
+  .container .left-part .text .list {
+    padding-right: 30px;
+  }
+}
+.container .left-part .text .list li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+.container .left-part .text .list li:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 965px) {
+  .container .left-part .text .list li {
+    align-items: flex-start;
+  }
+}
+.container .left-part .text .list li img {
+  height: 17px;
+  width: 17px;
+}
+@media screen and (max-width: 800px) {
+  .container .left-part .text .list li img {
+    height: 20px;
+    width: 20px;
+  }
+}
+.container .left-part .text .list li span {
+  color: hsl(234, 29%, 20%);
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 800px) {
+  .container .left-part .text .list li span {
+    font-size: 0.9rem;
+  }
+}
+.container .left-part .subscribe .labelFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.container .left-part .subscribe .labelFlex label {
+  color: hsl(234, 29%, 20%);
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.container .left-part .subscribe .labelFlex .error-mail {
+  color: hsl(4, 100%, 67%);
+  font-size: 0.6rem;
+  font-weight: 700;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.container .left-part .subscribe .labelFlex .span-display {
+  opacity: 1;
+  visibility: visible;
+}
+.container .left-part .subscribe input {
+  width: 100%;
+  background: transparent;
+  color: hsl(234, 29%, 20%);
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+}
+.container .left-part .subscribe input::-moz-placeholder {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.container .left-part .subscribe input::placeholder {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.container .left-part .subscribe input:focus {
+  border-color: hsl(234, 29%, 20%);
+}
+.container .left-part .subscribe .input-error {
+  border-color: hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+  background: hsla(4, 100%, 67%, 0.2);
+}
+.container .left-part .subscribe .input-error:focus {
+  border-color: hsl(4, 100%, 67%);
+}
+.container .left-part .subscribe button {
+  width: 100%;
+  background: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container .left-part .subscribe button:hover {
+  background: rgb(255, 87, 121);
+  background: linear-gradient(90deg, rgb(255, 87, 121) 0%, rgb(255, 109, 87) 100%);
+  box-shadow: 0 12px 20px 0 rgba(255, 98, 87, 0.5);
+  border: 2px solid hsl(4, 100%, 67%);
+}
+.container .right-part {
+  background-image: url(../images/illustration-sign-up-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+  .container .right-part {
+    background-image: url(../images/illustration-sign-up-mobile.svg);
+    width: 100%;
+    height: 35%;
+    order: 1;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.container2 {
+  background: hsl(0, 0%, 100%);
+  width: 300px;
+  height: 300px;
+  border-radius: 18px;
+  padding: 30px 35px;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .container2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    padding: 150px 20px 0 20px;
+  }
+}
+.container2 .icon-valid {
+  width: 35px;
+  height: 35px;
+}
+.container2 .icon-valid img {
+  width: 100%;
+}
+.container2 .text-sub {
+  margin-top: 20px;
+}
+@media screen and (max-width: 800px) {
+  .container2 .text-sub {
+    margin-top: 30px;
+  }
+}
+.container2 .text-sub h2 {
+  color: hsl(234, 29%, 20%);
+  font-size: 2rem;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 800px) {
+  .container2 .text-sub h2 {
+    padding-right: 20px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+}
+.container2 .text-sub p {
+  color: hsl(234, 29%, 20%);
+  font-size: 0.6rem;
+  font-weight: 500;
+  line-height: 14px;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 800px) {
+  .container2 .text-sub p {
+    font-size: 0.9rem;
+    line-height: 22px;
+    margin-bottom: 250px;
+    padding-right: 10px;
+  }
+}
+.container2 .text-sub p span {
+  font-weight: 700;
+}
+.container2 .text-sub .btn-dismiss {
+  width: 100%;
+  background: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container2 .text-sub .btn-dismiss:hover {
+  background: rgb(255, 87, 121);
+  background: linear-gradient(90deg, rgb(255, 87, 121) 0%, rgb(255, 109, 87) 100%);
+  box-shadow: 0 12px 20px 0 rgba(255, 98, 87, 0.5);
+  border: 2px solid hsl(4, 100%, 67%);
+}
+@media screen and (max-width: 800px) {
+  .container2 .text-sub .btn-dismiss {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=index.css.map */

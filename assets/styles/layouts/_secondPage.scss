@@ -1,0 +1,84 @@
+.container2 {
+    background: $white;
+    width: 300px;
+    height: 300px;
+    border-radius: 18px;
+    padding: 30px 35px;
+    display: none;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        padding: 150px 20px 0 20px;
+    }
+
+    .icon-valid {
+        width: 35px;
+        height: 35px;
+
+        img {
+            width: 100%;
+        }
+    }
+    .text-sub {
+        margin-top: 20px;
+
+        @media screen and (max-width: 800px) {
+            margin-top: 30px;
+        }
+
+        h2 {
+            color: $darkGrey;
+            font-size: 2rem;
+            line-height: 30px;
+            margin-bottom: 15px;
+
+            @media screen and (max-width: 800px) {
+                padding-right: 20px;
+                line-height: 34px;
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            color: $darkGrey;
+            font-size: 0.6rem;
+            font-weight: 500;
+            line-height: 14px;
+            margin-bottom: 25px;
+
+            @media screen and (max-width: 800px) {
+                font-size: 0.9rem;
+                line-height: 22px;
+                margin-bottom: 250px;
+                padding-right: 10px;
+            }
+
+            span {
+                font-weight: 700;
+            }
+        }
+        .btn-dismiss {
+            width: 100%;
+            background: $darkGrey;
+            font-family: 'Roboto', sans-serif;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.6rem;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: rgb(255,87,121);
+                background: linear-gradient(90deg, rgba(255,87,121,1) 0%, rgba(255,109,87,1) 100%);
+                box-shadow: 0 12px 20px 0 rgba(255, 98, 87, 0.5);
+                border: 2px solid $tomato;
+            }
+            @media screen and (max-width: 800px) {
+                padding: 12px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
